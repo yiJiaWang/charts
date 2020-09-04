@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vueParticles from 'vue-particles'
+//./components/index导出了组件及install方法
 import Vcomp from './components/index'
 import Toast from './components/toast'
 
@@ -11,6 +12,7 @@ import '@/assets/styles/common.scss'
 import '@/assets/iconfont/iconfont.css'
 
 Vue.use(vueParticles)
+//挂载vue   //vue use方法 会掉Vcomp 的 install方法
 Vue.use(Vcomp)
 
 Vue.config.productionTip = false

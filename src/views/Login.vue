@@ -39,7 +39,7 @@
 	            立即登录
 	          </button>
 	          <div class="tip">
-							默认用户名：admin ，默认密码：123456
+							默认用户名：yijia ，默认密码：123456
 	          </div>
         	</div>
         </div>
@@ -83,7 +83,7 @@ export default {
   components: {},
   data() {
   	return {
-  		userName: 'admin',
+  		userName: 'yijia',
   		userPwd: '123456',
       visible: false,
       modalContent: '这是一段自定义模态框消息'
@@ -100,7 +100,7 @@ export default {
   },
   methods: {
   	login () {
-  		if (this.userName == 'admin' && this.userPwd == '123456') {
+  		if (this.userName == 'yijia' && this.userPwd == '123456') {
          this.$router.push({
           path: '/home'
          })

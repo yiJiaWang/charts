@@ -79,6 +79,8 @@ export default {
   methods: {
     getEchart(dom, data) {
       let sum = (Math.round( (data.number / this.sum) * 10000 ) / 100).toFixed(1);
+      // 未引用直接用 因为在webpack上优化了在webpack.config.js中的配置代码externals:
+      // 会在index.html上引用cdn 挂载到windows上所以直接可以用
       let myChart = echarts.init(document.getElementById(dom));
       this.option = {
           color: [data.color, '#333'],

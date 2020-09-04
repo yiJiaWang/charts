@@ -90,7 +90,9 @@ if (typeof window !== "undefined" && window.Vue) {
 }
 
 const Vcomp = {
+  //支持按需加载
   ...components,
+  //vue use方法 会掉install方法
   install
 };
 
